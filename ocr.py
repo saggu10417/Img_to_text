@@ -34,9 +34,8 @@ filename = "img.png".format(os.getpid())
 cv2.imwrite(filename, gray)
 # load the image as a PIL/Pillow image, apply OCR, and then delete
 # the temporary file
-text = pytesseract.image_to_string(Image.open(filename))
+text = pytesseract.image_to_string(Image.open(filename),lang='eng')
 os.remove(filename)
 print(text)
+
  
-# show the output images
-cv2.waitKey(0)
