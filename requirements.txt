@@ -1,3 +1,3 @@
 Pytesseract==0.2.6
-Pillow==6.0.0
+Pillow==9.0.0
 opencv-python==4.1.0.25
